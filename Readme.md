@@ -46,6 +46,7 @@ Deploy do CRUD no Heroku.
 - subir o projeto para o repositório: `git push heroku master`
 - criar as variáveis ambiente dentro na plataforma => variável `PORT` será definida pelo própri heroku
 - liberar no MongoDB o IP do servidor heroku
+- fazer integração Heroku e Github para que o deploy seja automático
 
 
 <br>
