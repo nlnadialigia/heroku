@@ -4,7 +4,7 @@ import StudentModel from '../models/studentModel.js';
 
 const routes = express();
 
-routes.post('/student', async (request, response) => {
+routes.post('/', async (request, response) => {
   try {
     const student = new StudentModel(request.body);
 
@@ -16,7 +16,7 @@ routes.post('/student', async (request, response) => {
   }
 });
 
-routes.get('/student', async (request, response) => {
+routes.get('/', async (request, response) => {
   try {
     const student = await StudentModel.find({});
 
@@ -26,7 +26,7 @@ routes.get('/student', async (request, response) => {
   }
 });
 
-routes.patch('/student/:id', async (request, response) => {
+routes.patch('/:id', async (request, response) => {
   try {
     const { id } = request.params;
 
@@ -44,7 +44,7 @@ routes.patch('/student/:id', async (request, response) => {
   }
 });
 
-routes.delete('/student/:id', async (request, response) => {
+routes.delete('/:id', async (request, response) => {
   try {
     const { id } = request.params;
 
