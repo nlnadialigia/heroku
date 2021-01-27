@@ -32,13 +32,20 @@ Deploy do CRUD no Heroku.
 
 <br>
 
-### 📌 Criação
+### 📌 CLI Comandos
 
-```bash
-heroku create
-```
+- Criação: `heroku create`
 
-- cria um nome para aplicação e define um endereço remoto no heroku.
+- Rnomear: `heroku apps:rename <nome da aplicação>`
+
+### 📌 Passo a passo
+
+- criar a aplicação no heroku
+- renomear
+- criar arquivo `Procfile` com as configurações para deploy da aplicação
+- subir o projeto para o repositório: `git push heroku master`
+- criar as variáveis ambiente dentro na plataforma => variável `PORT` será definida pelo própri heroku
+- liberar no MongoDB o IP do servidor heroku
 
 
 <br>
